@@ -5,16 +5,13 @@
     <parent>
         <artifactId>hsweb-expands</artifactId>
         <groupId>org.hswebframework</groupId>
-        <version>3.0.3-SNAPSHOT</version>
+        <version>3.0.2</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>hsweb-expands-request</artifactId>
-    <url>https://github.com/hs-web/hsweb-expands/${artifactId}</url>
+    <url>https://github.com/hs-web/hsweb-expands/${project.artifactId}</url>
     <description>请求模拟工具:http,ftp,webservice</description>
-    <properties>
-        <cxf.version>3.1.7</cxf.version>
-    </properties>
 
     <dependencies>
         <dependency>
@@ -30,7 +27,6 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.31</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -41,13 +37,11 @@
         <dependency>
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
-            <version>1.8.3</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
-            <version>1.10</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -65,17 +59,16 @@
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
-            <version>4.5.2</version>
         </dependency>
+
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpmime</artifactId>
-            <version>4.5.2</version>
         </dependency>
+
         <dependency>
             <groupId>commons-net</groupId>
             <artifactId>commons-net</artifactId>
-            <version>3.4</version>
         </dependency>
 
         <!--<dependency>-->
@@ -90,19 +83,16 @@
         <dependency>
             <groupId>org.apache.cxf</groupId>
             <artifactId>cxf-rt-frontend-jaxws</artifactId>
-            <version>${cxf.version}</version>
             <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.apache.cxf</groupId>
             <artifactId>cxf-tools-java2ws</artifactId>
-            <version>${cxf.version}</version>
             <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.apache.cxf</groupId>
             <artifactId>cxf-rt-transports-http</artifactId>
-            <version>${cxf.version}</version>
             <optional>true</optional>
         </dependency>
     </dependencies>

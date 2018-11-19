@@ -5,12 +5,12 @@
     <parent>
         <artifactId>hsweb-expands</artifactId>
         <groupId>org.hswebframework</groupId>
-        <version>3.0.3-SNAPSHOT</version>
+        <version>3.0.2</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>hsweb-expands-template</artifactId>
-    <url>https://github.com/hs-web/hsweb-expands/${artifactId}</url>
+    <url>https://github.com/hs-web/hsweb-expands/${project.artifactId}</url>
     <description>模板引擎封装</description>
 
     <dependencies>
@@ -25,7 +25,6 @@
         <dependency>
             <groupId>org.freemarker</groupId>
             <artifactId>freemarker</artifactId>
-            <version>2.3.23</version>
             <optional>true</optional>
         </dependency>
     </dependencies>

@@ -5,12 +5,12 @@
     <parent>
         <artifactId>hsweb-expands</artifactId>
         <groupId>org.hswebframework</groupId>
-        <version>3.0.3-SNAPSHOT</version>
+        <version>3.0.2</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>hsweb-expands-security</artifactId>
-    <url>https://github.com/hs-web/hsweb-expands/${artifactId}</url>
+    <url>https://github.com/hs-web/hsweb-expands/${project.artifactId}</url>
     <description>加密解密,rsa</description>
 
     <dependencies>
@@ -22,7 +22,6 @@
         <dependency>
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
-            <version>1.10</version>
         </dependency>
     </dependencies>
 </project>

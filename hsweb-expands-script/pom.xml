@@ -5,12 +5,12 @@
     <parent>
         <artifactId>hsweb-expands</artifactId>
         <groupId>org.hswebframework</groupId>
-        <version>3.0.3-SNAPSHOT</version>
+        <version>3.0.2</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>hsweb-expands-script</artifactId>
-    <url>https://github.com/hs-web/hsweb-expands/${artifactId}</url>
+    <url>https://github.com/hs-web/hsweb-expands/${project.artifactId}</url>
     <description>动态脚本:动态编译执行js,groovy,java等等</description>
 
     <dependencies>
@@ -47,6 +47,7 @@
             <groupId>org.codehaus.groovy</groupId>
             <artifactId>groovy-all</artifactId>
             <optional>true</optional>
+            <scope>test</scope>
         </dependency>
 
         <!--ognl-->

@@ -3,14 +3,12 @@ package org.hswebframework.expands.compress.zip;
 import org.zeroturnaround.zip.ByteSource;
 import org.zeroturnaround.zip.FileSource;
 import org.zeroturnaround.zip.ZipEntrySource;
-import org.zeroturnaround.zip.ZipUtil;
 import org.zeroturnaround.zip.commons.IOUtils;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.zip.Deflater;
 import java.util.zip.ZipOutputStream;
 
 /**

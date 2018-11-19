@@ -4,7 +4,8 @@ import org.apache.commons.codec.binary.Base64;
 
 import javax.crypto.Cipher;
 import java.io.ByteArrayOutputStream;
-import java.security.*;
+import java.security.Key;
+import java.security.KeyFactory;
 import java.security.spec.EncodedKeySpec;
 
 /**

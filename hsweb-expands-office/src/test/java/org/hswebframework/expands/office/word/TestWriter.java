@@ -1,9 +1,5 @@
 package org.hswebframework.expands.office.word;
 
-import org.apache.poi.xwpf.usermodel.XWPFDocument;
-import org.apache.poi.xwpf.usermodel.XWPFTable;
-import org.apache.poi.xwpf.usermodel.XWPFTableCell;
-import org.apache.poi.xwpf.usermodel.XWPFTableRow;
 import org.hswebframework.utils.file.FileUtils;
 import org.junit.Test;
 
@@ -13,7 +9,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -21,7 +16,7 @@ import java.util.Map;
  */
 public class TestWriter {
 
-    @Test
+    // @Test
     public void testWriteTemplate2() throws Exception {
         try (InputStream in = new FileInputStream("/home/zhouhao/文档/保证书模板.docx");
              OutputStream out = new FileOutputStream("target/保证书模板.docx")) {

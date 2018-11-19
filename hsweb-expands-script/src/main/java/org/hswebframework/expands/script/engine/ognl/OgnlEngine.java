@@ -1,6 +1,8 @@
 package org.hswebframework.expands.script.engine.ognl;
 
+import ognl.DefaultMemberAccess;
 import ognl.Ognl;
+import ognl.OgnlContext;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.hswebframework.expands.script.engine.ExecuteResult;
 import org.hswebframework.expands.script.engine.ListenerSupportEngine;
@@ -67,7 +69,9 @@ public class OgnlEngine extends ListenerSupportEngine {
                 scriptContext = cache.get(id);
                 param = new HashMap<>(param);
                 param.putAll(getGlobalVariable());
-                Object obj = Ognl.getValue(scriptContext.getScript(), param, param);
+                OgnlContext ognlContext = new OgnlContext(scriptContext.getMemberAccess(), null,
+                        null, param);
+                Object obj = Ognl.getValue(scriptContext.getScript(), ognlContext, param);
                 result.setSuccess(true);
                 result.setResult(obj);
             } else {
@@ -87,14 +91,21 @@ public class OgnlEngine extends ListenerSupportEngine {
 
     class OgnlScriptContext extends ScriptContext {
         private Object script;
+        private DefaultMemberAccess memberAccess;
+
 
         public OgnlScriptContext(String id, String md5, Object script) {
             super(id, md5);
             this.script = script;
+            this.memberAccess = new DefaultMemberAccess(true);
         }
 
         public Object getScript() {
             return script;
+        }
+
+        public DefaultMemberAccess getMemberAccess() {
+            return memberAccess;
         }
     }
 }

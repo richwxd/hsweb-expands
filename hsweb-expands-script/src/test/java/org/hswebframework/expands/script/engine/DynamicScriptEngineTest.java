@@ -5,7 +5,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.slf4j.LoggerFactory;
 
-import javax.script.AbstractScriptEngine;
 import javax.script.Bindings;
 import javax.script.SimpleBindings;
 import java.util.*;
@@ -66,7 +65,7 @@ public class DynamicScriptEngineTest {
 
     @Test
     public void testJavascript() throws Exception {
-        DynamicScriptEngine engine = DynamicScriptEngineFactory.getEngine("groovy");
+        DynamicScriptEngine engine = DynamicScriptEngineFactory.getEngine("javascript");
         Bindings bindings = ((CommonScriptEngine) engine).getUtilBindings();
         ((CommonScriptEngine) engine).setUtilBindings(new SimpleBindings(bindings) {
             @Override

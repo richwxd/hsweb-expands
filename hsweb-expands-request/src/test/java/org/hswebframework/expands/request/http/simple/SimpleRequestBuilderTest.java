@@ -1,25 +1,18 @@
 package org.hswebframework.expands.request.http.simple;
 
 
-import org.apache.commons.codec.digest.DigestUtils;
 import org.hswebframework.expands.request.RequestBuilder;
 import org.hswebframework.expands.request.SimpleRequestBuilder;
 import org.hswebframework.expands.request.http.HttpRequest;
 import org.hswebframework.expands.request.http.HttpRequestGroup;
 import org.hswebframework.expands.request.http.Response;
 import org.hswebframework.expands.request.webservice.WebServiceRequest;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Method;
-import java.net.URL;
 
 /**
  * Created by zhouhao on 16-6-23.
